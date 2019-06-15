@@ -18,17 +18,18 @@ function nowServing(currentList){
 }
 
 function currentLine(currentList){
-  var concat = "The line is currently: ";
+  var concat = "The line is currently:";
   if(currentList.length>0){
     for(i = 0;i<currentList.length; i++){
       if(i< currentList.length-1){
-      concat = `${concat} + ${i+1} + .${currentList[i]} +,`;
+      concat = `${concat} ${i+1}.${currentList[i]},`;
       }else{
-                      concat = `${concat}${i+1}.${currentList[i]}`;
+                      concat = `${concat} ${i+1}.${currentList[i]}`;
 
       }
     }
   }else{
     concat ="The line is currently empty."
   }
+  return concat
 }
