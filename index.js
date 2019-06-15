@@ -24,7 +24,7 @@ function currentLine(currentList){
       if(i< currentList.length-1){
       concat = `${concat} + ${i+1} + .${currentList[i]} +,`;
       }else{
-                      concat = `${concat} + ${i+1} + .${currentList[i]}`;
+                      concat = `${concat}${i+1}.${currentList[i]}`;
 
       }
     }
