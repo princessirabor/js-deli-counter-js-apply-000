@@ -7,7 +7,7 @@ function takeANumber(currentList, newName){
 
 function nowServing(currentList){
   var first = currentList[0];
-  currentList[0].remove();
+  currentList.splice(0,1);
   return first;
   
 }
