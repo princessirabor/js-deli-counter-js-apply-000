@@ -6,8 +6,11 @@ function takeANumber(currentList, newName){
 }
 
 function nowServing(currentList){
+  var msg = ""
+  if(currentList.length>0){
   var first = currentList[0];
   currentList.splice(0,1);
-  return first;
+  }
+  return "Currently serving "+first+".";
   
 }
