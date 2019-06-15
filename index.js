@@ -6,11 +6,13 @@ function takeANumber(currentList, newName){
 }
 
 function nowServing(currentList){
-  var msg = ""
+  var msg = "";
   if(currentList.length>0){
   var first = currentList[0];
   currentList.splice(0,1);
-  }
-  return "Currently serving "+first+".";
+    msg = "Currently serving "+first+".";
+
+  }else{msg = "There is nobody waiting to be served!"}
+  return msg
   
 }
