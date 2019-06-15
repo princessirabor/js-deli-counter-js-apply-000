@@ -22,9 +22,9 @@ function currentLine(currentList){
   if(currentList.length>0){
     for(var i = 0;i<currentList.length; i++){
       if(i< currentList.length-1){
-      concat = `${concat} ${i+1}.${currentList[i]},`;
+      concat = `${concat} ${i+1}. ${currentList[i]},`;
       }else{
-                      concat = `${concat} ${i+1}.${currentList[i]}`;
+                      concat = `${concat} ${i+1}. ${currentList[i]}`;
 
       }
     }
